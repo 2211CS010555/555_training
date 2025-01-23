@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Users List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="store">
+            <!-- User data will be inserted here -->
+        </tbody>
+    </table>
+
+    <button id="addToCartBtn">Add To Cart</button>
+
+    <script>
+        // Fetch user data from the API and populate the table
+        function fetchUsers() {
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then(response => response.json()) // Convert response to JSON
+                .then(data => {
+                    const store = document.getElementById("store");
+                    if (store) {
+                        data.forEach((user, index) => {
+                            // Append each user's data to the table
+                            store.innerHTML += `
+                                <tr>
+                                    <td>${index + 1}</td>  <!-- Sl.No starts from 1 -->
+                                    <td>${user.name}</td>
+                                    <td>${user.email}</td>
+                                    <td>${user.company.name}</td>
+                                </tr>
+                            `;
+                        });
+                    }
+                })
+                .catch(err => console.error("Error fetching users:", err));
+        }
+
+        // Add event listener to the "Add To Cart" button
+        document.getElementById("addToCartBtn").addEventListener("click", function() {
+            alert("Item added to cart!"); // Simple message for now
+        });
+
+        // Call the fetchUsers function to populate the table
+        fetchUsers();
+    </script>
+</body>
+</html>
