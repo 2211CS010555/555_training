@@ -10,7 +10,7 @@
 // ele.innerHTML = "<h1>Header</h1>"
 // console.log(ele);
 
-//! 
+// ! 
 // let ele = document.getElementsByClassName("test");
 // console.log(ele);
 // console.log(Array.isArray(ele));
@@ -27,12 +27,12 @@
 //     element.style.backgroundColor="orange"
 // })
 
-//! 
+// ! 
 
 // let ele = document.getElementsByTagName("div");
 // console.log(ele);
 
-//! 
+// ! 
 
 // let ele = document.getElementsByName("formData");
 // // console.log(ele , Array.isArray(ele));
@@ -40,7 +40,7 @@
 //     console.log(inp.value);
 // })
 
-//! 
+// ! 
 // let ele = document.querySelector("#mru");
 // console.log(ele);
 
@@ -53,53 +53,53 @@
 
 
 // let btn = document.querySelector("#btn");
-//! addEventListner("event" ,()=>{})
-    // btn.addEventListener("click",()=>{
-    //     // console.log("button clicked");
-    //     // alert("hi")
-    //     document.body.style.backgroundColor="tomato"
-    // })
+// ! addEventListner("event" ,()=>{})
+//     btn.addEventListener("click",()=>{
+//         // console.log("button clicked");
+//         // alert("hi")
+//         document.body.style.backgroundColor="tomato"
+//     })
 
-    // let btn = document.querySelector("#btn");
-    // btn.addEventListener("dblclick",()=>{
-    //     console.log("double clicked");
-    // })
-
-
-    // let divBlock = document.getElementById("divBlock");
-    // divBlock.addEventListener("mouseover",()=>{
-    //     document.body.style.backgroundColor="yellow"
-    //     divBlock.style.backgroundColor="blue"
-    // })
-
-    // divBlock.addEventListener("mouseleave",()=>{
-    //     document.body.style.backgroundColor="orange"
-    //     divBlock.style.backgroundColor="aqua"
-    // })
+//     let btn = document.querySelector("#btn");
+//     btn.addEventListener("dblclick",()=>{
+//         console.log("double clicked");
+//     })
 
 
-    // let inp =document.getElementById("inp");
-    // inp.addEventListener("keydown",()=>{
-    //     console.log("keydown");
-    // })
+//     let divBlock = document.getElementById("divBlock");
+//     divBlock.addEventListener("mouseover",()=>{
+//         document.body.style.backgroundColor="yellow"
+//         divBlock.style.backgroundColor="blue"
+//     })
 
-    // inp.addEventListener("keyup",()=>{
-    //     console.log("keyup");
-    // })
+//     divBlock.addEventListener("mouseleave",()=>{
+//         document.body.style.backgroundColor="orange"
+//         divBlock.style.backgroundColor="aqua"
+//     })
 
-    // let bgColor = document.querySelectorAll(".bgColor");
-    // // console.log(bgColor);
-    // [...bgColor].map((element)=>{
-    //     // console.log(element);
-    //     element.addEventListener("mouseover",()=>{
-    //         // console.log(element.innerText);
-    //         element.style.backgroundColor=element.innerText;
-    //     });
-    //     element.addEventListener("mouseleave",()=>{
-    //         // console.log(element.innerText);
-    //         element.style.backgroundColor="transparent";
-    //     });
-    // })
+
+//     let inp =document.getElementById("inp");
+//     inp.addEventListener("keydown",()=>{
+//         console.log("keydown");
+//     })
+
+//     inp.addEventListener("keyup",()=>{
+//         console.log("keyup");
+//     })
+
+//     let bgColor = document.querySelectorAll(".bgColor");
+//     // console.log(bgColor);
+//     [...bgColor].map((element)=>{
+//         // console.log(element);
+//         element.addEventListener("mouseover",()=>{
+//             // console.log(element.innerText);
+//             element.style.backgroundColor=element.innerText;
+//         });
+//         element.addEventListener("mouseleave",()=>{
+//             // console.log(element.innerText);
+//             element.style.backgroundColor="transparent";
+//         });
+//     })
 
 
 // let ele = document.createElement("h1");
@@ -138,67 +138,66 @@
 //    localStorage.setItem("userData" , JSON.stringify(userDetails))
 // })
 
-// // localStorage.clear();
-
-// ! 
-
-// let vd= document.createElement("video");
-// vd.setAttribute("src" ,"./video123.mp4");
-// vd.setAttribute("controls" , "controls");
-// console.log(vd);
+// localStorage.clear();
 
 
-// document.body.appendChild(vd)
 
-// let h1 = document.createElement("h1");
-// h1.setAttribute("id","demo")
-// h1.innerText = "MRU Batch3 JS session";
-// console.log(h1);
-// h1.removeAttribute("id");
-
-// document.body.appendChild(h1);
+let vd= document.createElement("video");
+vd.setAttribute("src" ,"./video123.mp4");
+vd.setAttribute("controls" , "controls");
+console.log(vd);
 
 
-// ! 
-// let mainEle = document.createElement("div");
-// mainEle.setAttribute("id","mainBlock");
-// mainEle.style.border="2px solid red";
-// mainEle.style.width="550px";
-// mainEle.style.height="550px";
+document.body.appendChild(vd)
 
-// console.log(mainEle);
+let h1 = document.createElement("h1");
+h1.setAttribute("id","demo")
+h1.innerText = "MRU Batch3 JS session";
+console.log(h1);
+h1.removeAttribute("id");
+
+document.body.appendChild(h1);
 
 
-// let topEle = document.createElement("div");
-// topEle.setAttribute("class","topBlock");
-// // console.log(topEle);
+let mainEle = document.createElement("div");
+mainEle.setAttribute("id","mainBlock");
+mainEle.style.border="2px solid red";
+mainEle.style.width="550px";
+mainEle.style.height="550px";
 
-// let image = document.createElement("img");
-// image.src="https://cdn.pixabay.com/photo/2023/02/09/16/43/cat-7779237_640.jpg";
-// image.style.width="550px"
+console.log(mainEle);
 
-// let bottomEle = document.createElement("div");
-// bottomEle.setAttribute("class","bottomBlock");
-// // console.log(bottomEle);
 
-// let h1 = document.createElement("h1");
-// h1.innerText = "CAT";
-// h1.style.textAlign="center"
+let topEle = document.createElement("div");
+topEle.setAttribute("class","topBlock");
+// console.log(topEle);
 
-// let btn = document.createElement("button");
-// btn.innerText="View More";
-// btn.style.border="none";
-// btn.style.padding="20px";
-// btn.style.backgroundColor="dodgerblue";
-// btn.style.color="white";
+let image = document.createElement("img");
+image.src="https://cdn.pixabay.com/photo/2023/02/09/16/43/cat-7779237_640.jpg";
+image.style.width="550px"
 
-// bottomEle.appendChild(h1);
-// bottomEle.appendChild(btn);
+let bottomEle = document.createElement("div");
+bottomEle.setAttribute("class","bottomBlock");
+// console.log(bottomEle);
 
-// topEle.appendChild(image);
-// mainEle.appendChild(topEle);
-// mainEle.appendChild(bottomEle);
-// document.body.appendChild(mainEle);
+let h1 = document.createElement("h1");
+h1.innerText = "CAT";
+h1.style.textAlign="center"
+
+let btn = document.createElement("button");
+btn.innerText="View More";
+btn.style.border="none";
+btn.style.padding="20px";
+btn.style.backgroundColor="dodgerblue";
+btn.style.color="white";
+
+bottomEle.appendChild(h1);
+bottomEle.appendChild(btn);
+
+topEle.appendChild(image);
+mainEle.appendChild(topEle);
+mainEle.appendChild(bottomEle);
+document.body.appendChild(mainEle);
 
 // ! 
 
