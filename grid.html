@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+    
+        }
+        .parent{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 20% 40% 40% ;
+            grid-template-rows: 10% 50% 30% 10%;
+           
+
+        }
+        .header{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: aqua;
+            grid-column: 1/4;
+            grid-row: 1/2;
+
+           
+        }
+        .nav{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: blueviolet;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            
+
+        }
+        .article{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: blue;
+            grid-column:2/4 ;
+            grid-row: 2/3;
+
+        }
+        .ads{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: rgb(165, 255, 127);
+            grid-column:2/3 ;
+            grid-row:3/4 ;
+
+        }
+        .cnt3{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: rgb(165, 255, 127);
+            grid-column:3/4 ;
+            grid-row:3/4 ;
+
+        }
+        .footer{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-color: aqua;
+            grid-column:1/4 ;
+            grid-row:4/5 ;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class="header">Header</section>
+        <section class="nav">Nav</section>
+        <section class="article">content1</section>
+        <section class="ads">content2</section>
+        <section class="cnt3">content3</section>
+        <section class="footer">Footer</section>
+    </section>
+</body>
+</html>
